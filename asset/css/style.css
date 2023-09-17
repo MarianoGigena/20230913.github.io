@@ -63,8 +63,9 @@ p {
 }
 
 .destinos {
-    width: 100%;
+
     padding: 1rem;
+
     /* background-color: rgb(29, 226, 141);*/
     border-radius: 5%;
     background-image: linear-gradient(rgb(29, 226, 141), aquamarine)
