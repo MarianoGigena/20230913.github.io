@@ -58,10 +58,12 @@ p {
     font-size: 1.5rem;
     font-weight: 800;
     width: 1200px;
+    text-align: justify;
 
 }
 
 .destinos {
+    width: 100%;
     padding: 1rem;
     /* background-color: rgb(29, 226, 141);*/
     border-radius: 5%;
