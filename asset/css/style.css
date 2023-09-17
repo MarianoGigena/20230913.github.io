@@ -14,6 +14,8 @@ body {
 }
 
 
+
+
 .bienvenidos {
     text-align: center;
     color: rgb(6, 107, 63);
@@ -22,7 +24,8 @@ body {
 
 
 ul {
-    background-color: rgb(29, 226, 141);
+    background-image: linear-gradient(rgb(29, 226, 141), rgb(57, 232, 173));
+    /*background-color: rgb(29, 226, 141);*/
     text-align: center;
     border-radius: 10%;
 }
