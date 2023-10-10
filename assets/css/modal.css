@@ -1,5 +1,4 @@
 .modal {
-    display: none;
     position: fixed;
     top: 0%;
     left: 35%;
@@ -10,7 +9,16 @@
     align-items: center;
     border-radius: 10px;
     z-index: 1000;
+}
 
+.animation
+{
+    background-color: crimson;
+}
+
+.form::backdrop 
+{
+    background: rgba(25,25,25,0.75);
 }
 
 @media(max-width:640px) {
@@ -30,10 +38,12 @@
     text-align: center;
     position: relative;
     border: 2px solid rgb(173, 13, 53);
-
 }
 
-
+.modal::backdrop 
+{
+    background: rgba(2, 2, 2, 0.5);
+}
 
 .modal-contenido h1 {
     font-size: 2rem;
@@ -49,7 +59,6 @@
 .formulario {
     display: flex;
     align-items: center;
-
 }
 
 .campo {
@@ -91,6 +100,4 @@
 
 .textarea {
     display: block;
-
-
 }

@@ -13,7 +13,7 @@
 
     <header>
         <nav>
-            <img src="./assets/media/logos/nav-logo.png" alt="">
+            <a href="index.html"><img src="./assets/media/logos/nav-logo.png" class="header-button"></a>
         </nav>
     </header>
 
@@ -21,8 +21,7 @@
         <section class="first-section">
             <img class="first-section_logo" src="assets/media/logos/logo1.png">
             <div class="first-section_backdrop"></div>
-            <video class="first-section_video" src="assets/media/videos/Tesla video comprimido.mp4" autoplay loop
-                muted></video>
+            <video class="first-section_video" src="assets/media/videos/Tesla video comprimido 2.mp4" autoplay loop muted></video>
         </section>
 
         <section>
@@ -187,35 +186,35 @@
         </section>
     </main>
 
-    <div class="form">
+    <dialog class="form" id="dialog">
         <div id="miModal" class="modal">
             <div class="modal-contenido">
                 <span id="cerrarModal" class="cerrar">&times;</span>
-                <h2>Contactenos</h2>
+                <h2>Contáctenos</h2>
                 <form id="formulario">
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
-                        <input class="input" type="text" id="nombre" name="nombre">
+                        <input class="input" type="text" id="nombre" name="name" required>
                     </div>
                     <!--   Otros campos del formulario -->
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
-                        <label for="email">email:</label>
-                        <input class="input" type="email" id="email" name="email">
+                        <label for="email">Email:</label>
+                        <input class="input" type="email" id="email" name="email" required>
                     </div>
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
-                        <label class="textarea" for="comentarios">Consulta:</label>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+                        <label class="textarea" for="comment">Consulta:</label>
+                        <textarea id="comentarios" name="comment" rows="4" cols="30" required></textarea>
                     </div>
                     <!--   Otros campos del formulario -->
                     <button class="botonS" type="submit">Enviar</button>
-                    <button id="cerrarModal2" class="botonS">Cancelar</button>
+                    <button id="cerrarModal2" type="reset" class="botonS">Cancelar</button>
                 </form>
             </div>
         </div>
-    </div>
+    </dialog>
 
 
     <footer>
@@ -248,7 +247,8 @@
         </div>
         <p class="footer-copyright">Derechos reservados @2023</p>
     </footer>
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/script.js" type="module"></script>
 </body>
 
 </html>
