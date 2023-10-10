@@ -15,7 +15,7 @@
 @media(max-width:640px) {
     .modal {
         left: 1%;
-        width: 360px;
+        width: 99%;
     }
 }
 
