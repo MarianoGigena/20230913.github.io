@@ -12,6 +12,13 @@
     z-index: 1000;
 }
 
+@media(max-width:1400px) {
+    .modal {
+        left: 1%;
+        width: 80%;
+    }
+}
+
 .modal-contenido {
     font-size: 1.5rem;
     background-color: #151515;
