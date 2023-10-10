@@ -3,7 +3,7 @@
     position: fixed;
     top: 20%;
     left: 35%;
-    width: 30%;
+    width: 400px;
     height: auto;
     background-color: #151515;
     justify-content: center;
@@ -12,10 +12,10 @@
     z-index: 1000;
 }
 
-@media(max-width:1400px) {
+@media(max-width:640px) {
     .modal {
         left: 1%;
-        width: 80%;
+        width: 360px;
     }
 }
 
@@ -30,6 +30,8 @@
     position: relative;
     border: 2px solid rgb(173, 13, 53);
 }
+
+
 
 .modal-contenido h1 {
     font-size: 2rem;
