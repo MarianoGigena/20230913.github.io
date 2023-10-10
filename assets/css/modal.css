@@ -1,0 +1,85 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: auto;
+    background-color: #151515;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    font-size: 1.5rem;
+    background-color: #151515;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    position: relative;
+    border: 2px solid rgb(173, 13, 53);
+}
+
+.modal-contenido h1 {
+    font-size: 2rem;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+
+}
+
+.campo {
+    margin: 20px;
+}
+
+.input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(173, 13, 53);
+    color: white;
+    font-size: 1rem;
+}
+
+.botonS {
+    width: 130px;
+    font-size: 1.5rem;
+    margin: 20px;
+    display: inline;
+    color: black;
+    background-color: rgb(173, 13, 53);
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botonS:hover {
+    color: rgb(173, 13, 53);
+    background-color: black;
+}
+
+#comentarios {
+    background-color: rgb(173, 13, 53);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.textarea {
+    display: block;
+
+
+}

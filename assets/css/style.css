@@ -5,17 +5,16 @@
 @import url(triangle-section.css);
 @import url(third-section.css);
 @import url(footer.css);
+@import url(modal.css);
 
 
 
-:root
-{
+:root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Exo', sans-serif;
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
