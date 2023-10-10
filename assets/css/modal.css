@@ -1,7 +1,7 @@
 .modal {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 0%;
     left: 35%;
     width: 400px;
     height: auto;
@@ -10,6 +10,7 @@
     align-items: center;
     border-radius: 10px;
     z-index: 1000;
+
 }
 
 @media(max-width:640px) {
@@ -29,6 +30,7 @@
     text-align: center;
     position: relative;
     border: 2px solid rgb(173, 13, 53);
+
 }
 
 
