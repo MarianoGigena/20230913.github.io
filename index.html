@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
     <title>Tesla</title>
+    <link rel="icon" href="assets/media/logos/tesla-logo-transparent-free-png.webp">
 </head>
 
 <body>
@@ -24,9 +25,11 @@
             <video class="first-section_video" src="assets/media/videos/Tesla video comprimido 2.mp4" autoplay loop muted></video>
         </section>
 
-        <section>
-            <div class="second-section">
+        <section class="second-section">
                 <!--aca va el carrousel-->
+                <div class="wrap-corrousel">
+                    
+                </div>
                 <div class="divisor">
                     <div class="container-triangles">
                         <div class="triangles-div_flex">
@@ -169,16 +172,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
         </section>
 
         <section class="third-section">
-            <div>
+            <div class="third-section-div1">
                 <h2> Vehículos eléctricos </h2>
                 <p>Fabricación de vehículos increíbles y sin emisiones que puedan cargarse con energía limpia.</p>
             </div>
-            <div>
+            <div class="third-section-div2">
                 <h2> Superchargers </h2>
                 <p> Con más de 50000 superchargers <br> Tesla posee y opera la red global de carga rápida más grande del
                     mundo</p>
@@ -195,22 +196,23 @@
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
-                        <input class="input" type="text" id="nombre" name="name" required>
+                        <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre:" required>
                     </div>
                     <!--   Otros campos del formulario -->
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label for="email">Email:</label>
-                        <input class="input" type="email" id="email" name="email" required>
+                        <input class="input" type="email" id="email" name="email" placeholder="Introduzca su correo eléctronico:" required>
                     </div>
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label class="textarea" for="comment">Consulta:</label>
-                        <textarea id="comentarios" name="comment" rows="4" cols="30" required></textarea>
+                        <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Introduzca su consulta aquí:" required></textarea>
                     </div>
                     <!--   Otros campos del formulario -->
-                    <button class="botonS" type="submit">Enviar</button>
-                    <button id="cerrarModal2" type="reset" class="botonS">Cancelar</button>
+                    <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
+                    <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
+                    <div id="check"></div>
                 </form>
             </div>
         </div>

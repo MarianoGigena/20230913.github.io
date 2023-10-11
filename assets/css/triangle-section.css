@@ -16,9 +16,6 @@
 {
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
 }
 .container-triangles
 {
@@ -172,7 +169,7 @@
 
     .triangles-div
     {
-        margin: 0 -1.5vh -0.55vh -1vw;
+        margin: 0 0.35vh 0vh -.5vw;
         border-left: var(--triangle-width2) solid transparent;
         border-right: var(--triangle-width2) solid transparent;
     }

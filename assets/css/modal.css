@@ -1,14 +1,9 @@
 .modal {
     position: fixed;
-    top: 0%;
-    left: 35%;
-    width: 400px;
-    height: auto;
-    background-color: #151515;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    z-index: 1000;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .animation
@@ -18,31 +13,30 @@
 
 .form::backdrop 
 {
-    background: rgba(25,25,25,0.75);
-}
-
-@media(max-width:640px) {
-    .modal {
-        left: 1%;
-        width: 99%;
-    }
+    background: rgba(5,5,8,0.75);
 }
 
 .modal-contenido {
-    font-size: 1.5rem;
-    background-color: #151515;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    text-align: center;
     position: relative;
-    border: 2px solid rgb(173, 13, 53);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: var(--black-background-color);
+    color: white;
+    width: 370px;
+    padding: 50px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid var(--red-parts-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .modal::backdrop 
 {
-    background: rgba(2, 2, 2, 0.5);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .modal-contenido h1 {
@@ -51,48 +45,107 @@
 
 .cerrar {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
-.formulario {
-    display: flex;
-    align-items: center;
+.cerrar:hover
+{
+    color: var(--black-background-color);
+    background-color: var(--red-parts-color);
+    border-radius: 100%;
 }
 
-.campo {
+
+.campo 
+{
     margin: 20px;
 }
 
+.campo > textarea
+{
+    padding: 5px;
+    width: 360px;
+}
+
+.campo > textarea::placeholder
+{
+    color: black;
+    opacity: .5;
+    font-family: sans-serif;
+}
+
+.campo > textarea:active
+{
+    background-color: darkred;
+}
+
 .input {
-    width: 250px;
+    width: 360px;
     height: 20px;
-    border-radius: 5px;
-    background-color: rgb(173, 13, 53);
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+    background-color: var(--red-parts-color);
     color: white;
     font-size: 1rem;
 }
 
-.botonS {
+.input::placeholder
+{
+    color: black;
+    opacity: .5;
+    font-family: sans-serif;
+}
+
+.input:active
+{
+    background-color: darkred;
+}
+
+.sumbit-button{
     width: 130px;
+    border: none;
     font-size: 1.5rem;
     margin: 20px;
     display: inline;
-    color: black;
-    background-color: rgb(173, 13, 53);
-    border: 1px solid white;
+    color: var(--black-background-color);
+    border: 2px solid var(--red-parts-color);
+    background-color: var(--red-parts-color);
     padding: 5px;
     border-radius: 5px;
 }
 
-.botonS:hover {
-    color: rgb(173, 13, 53);
+.sumbit-button:hover {
+    color: var(--red-parts-color);
     background-color: black;
+    transition: 0.2s;
 }
 
+.close-button{
+    width: 130px;
+    font-size: 1.5rem;
+    margin: 20px;
+    display: inline;
+    color: var(--red-parts-color);
+    background-color: transparent;
+    border: 2px solid var(--red-parts-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.close-button:hover {
+    color: var(--red-parts-color);
+    background-color: black;
+    transition: 0.2s;
+}
+
+
 #comentarios {
-    background-color: rgb(173, 13, 53);
+    background-color: var(--red-parts-color);
     color: white;
     font-size: 1rem;
     border-radius: 5px;
@@ -100,4 +153,82 @@
 
 .textarea {
     display: block;
+}
+
+.check
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: limegreen;
+    border-radius: 100%;
+    margin: auto;
+    animation: 1s ease-in-out checkBackgroundAnimation;
+}
+
+.check::before
+{
+    content: "✓";
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--black-background-color);
+    margin: auto auto;
+    animation: .5s ease-in-out checkAnimation;
+}
+
+@keyframes checkAnimation
+{
+    0%
+    {
+        font-size: 2px;
+        color: var(--black-background-color);
+    }
+
+    50%
+    {
+        font-size: 35px;
+        color: var(--black-background-color);
+    }
+
+    75%
+    {
+        font-size: 30px;
+        color: var(--white-bars);
+    }
+
+    100%
+    {
+        font-size: 30px;
+        color: var(--black-background-color);
+    }
+}
+
+@keyframes checkBackgroundAnimation
+{
+    0%
+    {
+        background: transparent;
+    }
+    
+    25%
+    {
+        background: var(--red-parts-color);
+    }
+
+    50%
+    {
+        background: var(--red-parts-color);
+    }
+
+    75%
+    {
+        background: var(--white-bars);
+    }
+
+    100%
+    {
+        background: lime;
+    }
 }

@@ -7,8 +7,6 @@
 @import url(footer.css);
 @import url(modal.css);
 
-
-
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Exo', sans-serif;
@@ -17,4 +15,8 @@
 * {
     margin: 0;
     padding: 0;
+    --black-background-color:#151515;
+    --black-background-color2:#111;
+    --red-parts-color: rgb(173, 13, 53);
+    --white-bars: #ddd;
 }

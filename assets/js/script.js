@@ -6,19 +6,23 @@ const botonMostrarModal = document.getElementById('mostrarModal');
 const modal = document.getElementById('dialog');
 const botonCerrarModal = document.getElementById('cerrarModal');
 const botonCerrarModal2 = document.getElementById('cerrarModal2');
+const botonEnviar = document.getElementById('sumbit-button');
+const check = document.getElementById('check');
+
 
 botonMostrarModal.addEventListener('click', () => {
     //modal.style.display = 'block';
     modal.showModal();
+
 });
 
 botonCerrarModal.addEventListener('click', () => {
-    //modal.style.display = 'none';
+    //botonCerrarModal.style.display = 'none';
     modal.close();
 });
 
 botonCerrarModal2.addEventListener('click', () => {
-   // modal.style.display = 'none';
+    //botonCerrarModal2.style.display = 'none';
     modal.close();
 });
 
@@ -44,16 +48,28 @@ document.querySelector("form").addEventListener("submit", async (e) =>
         body: dataForm,
     });
 
-    form.classList.add("animation");
+    check.classList.add("check");
 
     alert("Su consulta fue enviada con éxito.");
+
+    const hidebuttons = () =>
+    {
+        botonCerrarModal.style.display = 'none';
+        botonCerrarModal2.style.display = 'none';
+        botonEnviar.style.display = 'none';
+    }
+
+    hidebuttons();
 
     const endForm = ()=> { 
         
         modal.close();
-        form.classList.remove("animation");
+        check.classList.remove("check");
         form.reset();
+        botonCerrarModal.style.display = 'inline';
+        botonCerrarModal2.style.display = 'inline';
+        botonEnviar.style.display = 'inline';
     };
 
-    setTimeout(endForm,1000);
+    setTimeout(endForm,2000);
 })
