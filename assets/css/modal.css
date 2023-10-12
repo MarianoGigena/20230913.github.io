@@ -65,6 +65,12 @@
     border: 2px solid transparent;
 }
 
+.input:hover
+{
+    cursor:text;
+}
+
+
 .input::placeholder
 {
     color: var(--white-bars);
@@ -83,6 +89,11 @@
     font-size: 1rem;
     border-radius: 5px;
     border: 2px solid transparent;
+}
+
+#comentarios:hover
+{
+    cursor: text;
 }
 
 .campo > textarea
