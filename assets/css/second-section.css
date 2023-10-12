@@ -10,9 +10,10 @@
 .wrap-corrousel
 {
     width: 75%;
-    height: 500px;
+    height: 50%;
     background: salmon;
-    margin: 50px auto;
+    margin: 5% auto;
+    position: absolute;
 }
 
 .wrap-corrousel::before
@@ -22,5 +23,6 @@
 
 .divisor
 {
-
+    display: flex;
+    align-items: end;
 }

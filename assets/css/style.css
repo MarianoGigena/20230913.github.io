@@ -15,8 +15,17 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     --black-background-color:#151515;
+
     --black-background-color2:#111;
-    --red-parts-color: rgb(173, 13, 53);
+    --black-background-color3:#222;
+    --red-parts-color: #FF0040;
     --white-bars: #ddd;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
 }

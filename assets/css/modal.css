@@ -6,11 +6,6 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.animation
-{
-    background-color: crimson;
-}
-
 .form::backdrop 
 {
     background: rgba(5,5,8,0.75);
@@ -18,116 +13,125 @@
 
 .modal-contenido {
     position: relative;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: auto;
+
+    font-weight: bold;
     background-color: var(--black-background-color);
-    color: white;
-    width: 370px;
-    padding: 50px;
+    color: var(--red-parts-color);
+    width: 30vw;
+    padding: 5vh 5vw;
     border-radius: 3px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     border: 1px solid var(--red-parts-color);
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.modal::backdrop 
-{
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.modal-contenido h1 {
-    font-size: 2rem;
-}
-
 .cerrar {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
     top: 20px;
     right: 20px;
-    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
 }
 
 .cerrar:hover
 {
-    color: var(--black-background-color);
     background-color: var(--red-parts-color);
-    border-radius: 100%;
+    color: var(--white-bars);
+    border-radius: 2px;
+    cursor: pointer;
 }
 
+.input {
+    display: block;
+    width: 100%;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+    background-color: var(--black-background-color3);
+    color: var(--white-bars);
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+.input::placeholder
+{
+    color: var(--white-bars);
+    opacity: .35;
+    font-family: sans-serif;
+}
 
 .campo 
 {
     margin: 20px;
 }
 
+#comentarios {
+    background-color: var(--black-background-color3);
+    color: var(--white-bars);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
 .campo > textarea
 {
     padding: 5px;
-    width: 360px;
+    width: 100%;
+    height: 25vh;
 }
 
 .campo > textarea::placeholder
 {
-    color: black;
-    opacity: .5;
+    color: var(--white-bars);
+    opacity: .35;
     font-family: sans-serif;
 }
 
-.campo > textarea:active
+.form-buttons
 {
-    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.input {
-    width: 360px;
-    height: 20px;
-    border-radius: 2px;
+.sumbit-button
+{
+    width: 12vw;
+    height: 7vh;
     border: none;
-    padding: 5px;
-    background-color: var(--red-parts-color);
-    color: white;
-    font-size: 1rem;
-}
-
-.input::placeholder
-{
-    color: black;
-    opacity: .5;
-    font-family: sans-serif;
-}
-
-.input:active
-{
-    background-color: darkred;
-}
-
-.sumbit-button{
-    width: 130px;
-    border: none;
-    font-size: 1.5rem;
     margin: 20px;
     display: inline;
-    color: var(--black-background-color);
+    color: var(--white-bars);
     border: 2px solid var(--red-parts-color);
     background-color: var(--red-parts-color);
     padding: 5px;
     border-radius: 5px;
+    font-size: large;
 }
 
 .sumbit-button:hover {
     color: var(--red-parts-color);
     background-color: black;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .close-button{
-    width: 130px;
-    font-size: 1.5rem;
+    width: 12vw;
+    height: 7vh;
     margin: 20px;
     display: inline;
     color: var(--red-parts-color);
@@ -135,25 +139,16 @@
     border: 2px solid var(--red-parts-color);
     padding: 5px;
     border-radius: 5px;
+    font-size: large;
 }
 
 .close-button:hover {
     color: var(--red-parts-color);
     background-color: black;
     transition: 0.2s;
+    cursor: pointer;
 }
 
-
-#comentarios {
-    background-color: var(--red-parts-color);
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-.textarea {
-    display: block;
-}
 
 .check
 {
@@ -230,5 +225,42 @@
     100%
     {
         background: lime;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .modal-contenido {
+
+        width: 75vw;
+        font-size: larger;
+    }
+
+    .input 
+    {
+        width: 100%;
+    }
+
+    .campo > textarea
+    {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .form-buttons
+    {
+        flex-direction: column;
+    }
+
+    .sumbit-button
+    {
+        width: 100%;
+        font-size: large;
+    }
+
+    .close-button
+    {
+        width: 100%;
+        font-size: large;
     }
 }

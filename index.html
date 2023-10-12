@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
     <title>Tesla</title>
-    <link rel="icon" href="assets/media/logos/tesla-logo-transparent-free-png.webp">
+    <link rel="icon" href="assets/media/logos/Tesla-logo-head.png">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <a href="index.html"><img src="./assets/media/logos/nav-logo.png" class="header-button"></a>
+            <a href="./index.html"><img src="./assets/media/logos/nav-logo.png" class="header-button"></a>
         </nav>
     </header>
 
     <main>
         <section class="first-section">
+            <div class="first-section_buttons-container">
+                <a href="#second-section" class="first-section_buttons-item">MODELOS DE VEHÍCULOS</a>
+                <a href="#third-section" class="first-section_buttons-item">INFORMACIÓN</a>
+                <a href="#footer" class="first-section_buttons-item">CONTACTO</a>
+            </div>
             <img class="first-section_logo" src="assets/media/logos/logo1.png">
-            <div class="first-section_backdrop"></div>
+            <div class="first-section_backdrop">
+            </div>
             <video class="first-section_video" src="assets/media/videos/Tesla video comprimido 2.mp4" autoplay loop muted></video>
         </section>
 
-        <section class="second-section">
+        <section class="second-section" id="second-section">
                 <!--aca va el carrousel-->
-                <div class="wrap-corrousel">
-                    
+                <div class="wrap-corrousel">   
                 </div>
                 <div class="divisor">
                     <div class="container-triangles">
@@ -174,15 +179,29 @@
                 </div>
         </section>
 
-        <section class="third-section">
+        <section class="third-section" id="third-section">
+
             <div class="third-section-div1">
-                <h2> Vehículos eléctricos </h2>
-                <p>Fabricación de vehículos increíbles y sin emisiones que puedan cargarse con energía limpia.</p>
+                <div class="third-section-div1_img">
+                    <img src="assets/media/images/vehicle car1.png" alt="">
+                </div>
+                <div class="third-section-div1_info">
+                    <h2> Vehículos eléctricos </h2>
+                    <p>Fabricación de vehículos increíbles y sin emisiones que puedan cargarse con energía limpia.</p>
+                    <a href="" class="third-section-div_info-button">Más información</a>
+                </div>
             </div>
+
             <div class="third-section-div2">
-                <h2> Superchargers </h2>
-                <p> Con más de 50000 superchargers <br> Tesla posee y opera la red global de carga rápida más grande del
-                    mundo</p>
+                <div class="third-section-div2_info">
+                    <h2> Superchargers </h2>
+                    <p> Con más de 50000 superchargers <br> Tesla posee y opera la red global de carga rápida más grande del
+                        mundo</p>
+                    <a href="" class="third-section-div_info-button">Más información</a>
+                </div>
+                <div class="third-section-div2_img">
+                    <img src="assets/media/images/supercharging1.png" alt="">
+                </div>
             </div>
         </section>
     </main>
@@ -196,22 +215,24 @@
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
-                        <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre:" required>
+                        <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre" required>
                     </div>
                     <!--   Otros campos del formulario -->
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label for="email">Email:</label>
-                        <input class="input" type="email" id="email" name="email" placeholder="Introduzca su correo eléctronico:" required>
+                        <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto" required>
                     </div>
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
                         <label class="textarea" for="comment">Consulta:</label>
-                        <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Introduzca su consulta aquí:" required></textarea>
+                        <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí" required></textarea>
                     </div>
                     <!--   Otros campos del formulario -->
-                    <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
-                    <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
+                    <div class="form-buttons">
+                        <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
+                        <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
+                    </div>
                     <div id="check"></div>
                 </form>
             </div>
@@ -219,9 +240,8 @@
     </dialog>
 
 
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
-
             <div class="footer_item-one">
                 <img class="footer-item_logo" src="./assets/media/logos/Tesla-Logo.png" alt="imagen">
                 <p>¿Necesitas contacto directo?</p>
