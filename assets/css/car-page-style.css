@@ -1,0 +1,174 @@
+.first-section_car-page
+{
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background: var(--black-background-color);
+} 
+
+.second-section_car-page
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    background: rgb(10,10,50);
+    background: linear-gradient(90deg, var(--black-background-color2) 50%, rgba(35,35,35,1) 100%);
+} 
+
+.second-section-div_info_car-page
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+}
+
+.third-section_car-page
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    background: rgb(35,35,35);
+    background: linear-gradient(90deg, rgb(35,35,35) 4%, var(--black-background-color2) 50%);
+}
+
+.third-section-div_info_car-page
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+}
+
+.second-section-div_info_car-page > h2 
+{
+    color: var(--red-parts-color);
+}
+
+.second-section-div_info_car-page > p
+{
+    color: var(--white-bars);
+}
+
+.second-section-div_info_car-page > h3
+{
+    color: var(--white-bars);
+    font-weight: bold;
+    margin: 8px;
+}
+
+.third-section-div_info_car-page > h2 
+{
+    color: var(--red-parts-color);
+}
+
+.third-section-div_info_car-page > p
+{
+    color: var(--white-bars);
+}
+
+.third-section-div_info_car-page > h3
+{
+    color: var(--white-bars);
+    font-weight: bold;
+    margin: 8px;
+}
+
+.second-section-div_img_car-page
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+.third-section-div_img_car-page
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+.second-section-div_img_car-page-1 > img
+{
+    width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.third-section-div_img_car-page-2 > img
+{
+    width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+@media (max-width:800px)
+{
+    .second-section_car-page
+    {
+        flex-direction: column;
+        height: 108vh;
+    }
+
+    .second-section-div_info_car-page
+    {
+        flex-direction: column;
+    }
+
+    .third-section_car-page
+    {
+        flex-direction: column-reverse;
+        height: 108vh;
+    }
+
+    .third-section-div_info_car-page
+    {
+        flex-direction: column;
+    }
+
+    .second-section-div_info_car-page > h2 
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .third-section-div_info_car-page > h2 
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-section-div_info_car-page
+    {
+        width: 100%;
+    }
+
+    .third-section-div_info_car-page
+    {
+        width: 100%;
+    }
+
+}
