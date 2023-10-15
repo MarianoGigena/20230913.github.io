@@ -44,7 +44,7 @@ nav > a > img:hover
     width: calc(1/4 * 100%);
     position: absolute;
     animation: 1s ease-in-out logo-animation;
-    filter: drop-shadow(5px 5px 5px #333);
+    /*filter: drop-shadow(5px 5px 5px #333);*/
     pointer-events: none;
     user-select: none;
     z-index: 2;
