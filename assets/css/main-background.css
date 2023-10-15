@@ -240,7 +240,7 @@ nav > a > img:hover
     {
         width: calc(1/2 * 100%); 
         animation: 1s ease-in-out logo-animation-2;
-        transform: translateY(-75px);
+        transform: translateY(-125px);
     }
 
     .first-section_buttons-container
