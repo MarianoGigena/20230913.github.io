@@ -61,21 +61,21 @@
      
 
 .card .img img{
-    width: 507px ;
-    height: 342px ;
+    width: 455px ;
+    height: 290px ;
     object-fit: cover;
     border-radius: 8%;
     position: relative;
 }
 
-.card .img{
+/*.card .img{
     background: #FF0040;
     width: 515px;
     height: 350px;
     border-radius: 8%;
     position: relative;
         
-}
+}*/
 
 .card .img .title{
     font-weight: 500;
@@ -104,8 +104,8 @@
 
 .carousel .card{
     scroll-snap-align: start ;
-    height: 350px;
-    width: 515px;
+    height: 300px;
+    width: 465px;
     list-style: none;
     background: #fff;
     border-radius: 8%;
