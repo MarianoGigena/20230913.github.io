@@ -13,6 +13,19 @@
 {
     height: 100%;
     width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+}
+
+.divisor-2
+{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: end;
 }
 
 .container-triangles
@@ -25,6 +38,7 @@
     flex-wrap: wrap;
     pointer-events: none;
     user-select: none;
+    align-items: end;
 }
 
 .container-triangles::before

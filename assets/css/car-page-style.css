@@ -123,6 +123,27 @@
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
+.car-especific-info
+{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: var(--white-bars);
+    gap: 25px;
+    z-index: 55;
+}
+
+.car-info-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5px;
+}
+
 @media (max-width:800px)
 {
     .second-section_car-page
