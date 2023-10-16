@@ -89,6 +89,7 @@
     font-size: 1rem;
     border-radius: 5px;
     border: 2px solid transparent;
+    resize: none;
 }
 
 #comentarios:hover
@@ -182,6 +183,13 @@
     color: var(--black-background-color);
     margin: auto auto;
     animation: .5s ease-in-out checkAnimation;
+}
+
+#successful-msg-form
+{
+    display: none;
+    margin: 10px 0 20px 0 ;
+    color: var(--white-bars);
 }
 
 @keyframes checkAnimation

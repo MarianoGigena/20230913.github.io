@@ -190,15 +190,11 @@
                 <div class="third-section-div_info_car-page">
                     <h2> EXTERIOR </h2>
 
-                    <h3>Matente conectado</h3>
-                    <p>Conéctate al instante con Bluetooth para múltiple duspositivos o utiliza las funciones de carga rápida, ya sea inlambrica o a través del USB-C de 36W.</p>
-
-                    <h3>Ambiente perfecto</h3>
-                    <p>Las salidas del aire están ocultas en toda la cabina, mientras que los controles de temperatura de tres zona, los asientos ventilados y la filtración FEPA brindadn el ambiente perfecto.</p>
-
-                    <h3>Volante Yoke</h3>
-                    <p>Un nuevo y audaz enfoque te brinda una verdadera conexicón con el Model S, que ofrece una mejor sensación de ka dirección, además de una vista sin obstrucciones del tablero y el camino por delante. Toca el freno y el Modelo S seleccionará automáticamente la dirección correcta para iniciar tu viaje.</p>
-
+                    <h3>Diseñado para la eficiencia</h3>
+                    <p>Con un coeficiente de resistencia aerodinámica de solo.208 Cx, el más bajo del planeta, el Model S está construido àra velocidad, resistencia y autonomía. 
+                        
+                        El Model S Plaid tiene la aceleración más rápida de cualquier vehiculo en prodducción. La arquitectura de batería actualizada para todos los models del Model S permite recorridos consecutivos sin degradación del desempeño.
+                    </p>
                 </div>
                 <div class="third-section-div_img_car-page-2">
                     <img src="../assets/media/images/TeslaModelSRun.jpg" alt="">
@@ -214,18 +210,18 @@
                 <form id="formulario">
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
-                        <label for="nombre">Nombre:</label>
+                        <label class="label" for="nombre">Nombre:</label>
                         <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
                     </div>
                     <!--   Otros campos del formulario -->
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
-                        <label for="email">Email:</label>
+                        <label class="label" for="email">Email:</label>
                         <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto." required>
                     </div>
                     <!--  Aquí van los campos de tu formulario -->
                     <div class="campo">
-                        <label class="textarea" for="comment">Consulta:</label>
+                        <label class="label" for="comment">Consulta:</label>
                         <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí." required></textarea>
                     </div>
                     <!--   Otros campos del formulario -->
@@ -233,6 +229,7 @@
                         <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
                         <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
                     </div>
+                    <div id="successful-msg-form">Tu consulta fue enviada con éxito.</div>
                     <div id="check"></div>
                 </form>
             </div>
@@ -240,49 +237,73 @@
     </dialog>
 
     <dialog class="form-2" id="dialog-2">
+
         <div id="miModal-2" class="modal-2">
+
             <div class="modal-contenido-2">
+
                 <span id="cerrarModal-2" class="cerrar-2">&times;</span>
+
                 <h2>Opina</h2>
+
                 <form id="formulario-2">
                     <!--  Aquí van los campos de tu formulario -->
+
                     <div class="campo-2">
-                        <label for="nombre">Nombre:</label>
-                        <input class="input-2" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
+                        <label for="rating" class="label-2"></label>
+                        <div class="rate-container" id="rate-container">
+
+                            <div class="star-widget">
+
+                                <input type="radio" id="rate-5" required>
+                                <label for="rate-5" class="fas fa-star"></label>
+
+                                <input type="radio" id="rate-4" required>
+                                <label for="rate-4" class="fas fa-star"></label>
+
+                                <input type="radio" id="rate-3" required>
+                                <label for="rate-3" class="fas fa-star"></label>
+
+                                <input type="radio" id="rate-2" required>
+                                <label for="rate-2" class="fas fa-star"></label>
+
+                                <input type="radio" id="rate-1" required>
+                                <label for="rate-1" class="fas fa-star"></label>
+                            </div>
+
+                            <div class="rate-header" id="rate-header"></div>
+                            <input type="text" value="" class="rate-value" id="rate-value" name="rate" required>
+                    </div>
+
+                    <div class="campo-2">
+                        <label for="model" class="label-2">Modelo</label>
+                        <select class="model-selector" name="model" id="model-selector">
+                            <option value="Model S">Model S</option>
+                            <option value="Model S">Model 3</option>
+                            <option value="Model S">Model Y</option>
+                            <option value="Model S">Model X</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-2">
+                        <label class="label-2" for="nombre">Nombre:</label>
+                        <input class="input-2" type="text" id="nombre-2" name="name-2" placeholder="Introduzca su nombre." required>
                     </div>
                     <!--   Otros campos del formulario -->
                     <!--  Aquí van los campos de tu formulario -->
-                    <label for="rating">Puntuación</label>
-                    <div class="rate-container">
-
-                        <div class="star-widget">
-                            <input type="radio" id="rate-5" name="rating"required>
-                            <label for="rate-5" class="fas fa-star"></label>
-                            <input type="radio" id="rate-4" name="rating"required>
-                            <label for="rate-4" class="fas fa-star"></label>
-                            <input  ype="radio" id="rate-3" name="rating"required>
-                            <label for="rate-3" class="fas fa-star"></label>
-                            <input type="radio" id="rate-2" name="rating"required>
-                            <label for="rate-2" class="fas fa-star"></label>
-                            <input type="radio" id="rate-1" name="rating"required>
-                            <label for="rate-1" class="fas fa-star"></label>
-                            <div class="rate-header-container">
-                                <div class="rate-header">
-                                    Muy mala!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!--  Aquí van los campos de tu formulario -->
+
                     <div class="campo">
-                        <label class="textarea-2" for="comment">Opinión</label>
-                        <textarea id="comentarios-2" name="comment" rows="4" cols="30" placeholder="Describa su experiencia aquí." required></textarea>
+                        <label class="label-2" for="comment">Opinión</label>
+                        <textarea id="comentarios-2" name="comment-2" rows="4" cols="30" placeholder="Describa su experiencia aquí." required></textarea>
                     </div>
                     <!--   Otros campos del formulario -->
                     <div class="form-buttons-2">
                         <button class="sumbit-button-2" id="sumbit-button-2" type="submit">Enviar</button>
                         <button id="cerrarModal2-2" type="reset" class="close-button-2">Cerrar</button>
                     </div>
+                    <div id="successful-msg-form-2">Tu opinión fue enviada con éxito.</div>
                     <div id="check-2"></div>
                 </form>
             </div>
@@ -302,8 +323,8 @@
                 <h3>Modelo de vehículos</h2>
                     <a href="../pages/model-S.html">Model S</a>
                     <a href="../pages/model-3.html">Model 3</a>
-                    <a href="../pages/model-Y.html">Model Y</a>
                     <a href="../pages/model-X.html">Model X</a>
+                    <a href="../pages/model-Y.html">Model Y</a>
             </div>
 
             <div class="footer_item-three">

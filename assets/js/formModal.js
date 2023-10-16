@@ -7,6 +7,14 @@ const botonCerrarModal2 = document.getElementById('cerrarModal2');
 const botonEnviar = document.getElementById('sumbit-button');
 const check = document.getElementById('check');
 
+const successfulMSG = document.getElementById('successful-msg-form');
+
+const nameInput = document.getElementById('nombre');
+
+const labels = document.getElementsByClassName('label');
+const emailInput = document.getElementById('email');
+const textArea = document.getElementById('comentarios');
+
 const showFormModal = ()=> 
 {
     botonMostrarModal.addEventListener('click', () => {
@@ -24,7 +32,7 @@ const showFormModal = ()=>
 
 const formFunction = ()=>
 {
-    document.querySelector("form").addEventListener("submit", async (e) =>
+    modal.addEventListener("submit", async (e) =>
     {
         e.preventDefault();
 
@@ -42,13 +50,23 @@ const formFunction = ()=>
 
         check.classList.add("check");
 
-        alert("Su consulta fue enviada con éxito.");
+        /*alert("Su consulta fue enviada con éxito.");*/
 
         const hidebuttons = () =>
         {
             botonCerrarModal.style.display = 'none';
             botonCerrarModal2.style.display = 'none';
             botonEnviar.style.display = 'none';
+            nameInput.style.display = 'none';
+            emailInput.style.display = 'none';
+            textArea.style.display = 'none';
+
+            for (let label of labels) 
+            {
+                label.style.display = 'none';
+            }
+
+            successfulMSG.style.display = 'block';
         }
 
         hidebuttons();
@@ -61,6 +79,16 @@ const formFunction = ()=>
             botonCerrarModal.style.display = 'inline';
             botonCerrarModal2.style.display = 'inline';
             botonEnviar.style.display = 'inline';
+            
+            nameInput.style.display = 'inline';
+            emailInput.style.display = 'inline';
+            textArea.style.display = 'inline';
+
+            for (let label of labels) 
+            {
+                label.style.display = 'block';
+            }
+            successfulMSG.style.display = 'none';
         };
 
         setTimeout(endForm,2000);

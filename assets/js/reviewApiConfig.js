@@ -1,3 +1,3 @@
-const REVIEW_API_URL = "https://sheetdb.io/api/v1/th89s4vn1zy8h";
+const REVIEW_API_URL = "https://sheetdb.io/api/v1/0f0xwosumm03g";
 
 export { REVIEW_API_URL };

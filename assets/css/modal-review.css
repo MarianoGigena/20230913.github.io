@@ -41,7 +41,7 @@
 
     font-weight: bold;
     background-color: var(--black-background-color);
-    color: var(--red-parts-color);
+    color: var(--white-bars);
     width: 30vw;
     padding: 5vh 5vw;
     border-radius: 3px;
@@ -52,6 +52,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.modal-contenido-2 > h2
+{
+    color: var(--red-parts-color);
 }
 
 .cerrar-2 {
@@ -93,7 +98,6 @@
     cursor:text;
 }
 
-
 .input-2::placeholder
 {
     color: var(--white-bars);
@@ -106,15 +110,31 @@
     margin: 20px;
 }
 
+.model-selector
+{
+    display: block;
+    background-color: var(--black-background-color3);
+    color: var(--white-bars);
+    width: 100%;
+    height: 6vh;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+
+    border: 2px solid transparent;
+}
+
 .rate-container
 {
     width: 100%;
-    background: var(--red-parts-color);
+    /*background: var(--red-parts-color);*/
     padding: 10px 5px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .rate-container .star-widget input
@@ -123,8 +143,8 @@
 }
 .star-widget > label
 {
-    color: var(--black-background-color2);
-    font-size: 2rem;
+    color: var(--black-background-color3);
+    font-size: 1.5rem;
     padding: 10px;
     float: right;
     transition: .2s;
@@ -134,24 +154,58 @@ input:not(:checked) ~ label:hover,
 input:not(:checked) ~ label:hover ~ label
 {
     color: var(--white-bars);
+    cursor: pointer;
 }
 
 input:checked ~ label
 {
-    color: var(--white-bars);
-    text-shadow: 0 0 20px var(--white-bars);
+    color: var(--red-parts-color);
+    /*text-shadow: 0 0 20px var(--white-bars);*/
 }
+
+/*input#rate-1:checked ~.rate-header:before
+{
+    content: "Mala";
+}
+input#rate-2:checked ~.rate-header:before
+{
+    content: "Regular";
+}
+
+input#rate-3:checked ~.rate-header:before
+{
+    content: "Buena";
+}
+input#rate-4:checked ~.rate-header:before
+{
+    content: "Muy buena";
+}
+
+input#rate-5:checked ~.rate-header:before
+{
+    content: "Excelente";
+}*/
 
 .rate-header
 {
-    color: black;
+    color: var(--white-bars);
+    font-family: sans-serif;
+    text-align: center;
 }
+
+.rate-value{
+    width: 0;
+    height: 0;
+    border: none;
+}
+
 #comentarios-2 {
     background-color: var(--black-background-color3);
     color: var(--white-bars);
     font-size: 1rem;
     border-radius: 5px;
     border: 2px solid transparent;
+    resize: none;
 }
 
 #comentarios-2:hover
@@ -223,6 +277,24 @@ input:checked ~ label
     cursor: pointer;
 }
 
+#invisible
+{
+    color: transparent;
+    position: absolute;
+    background: none;
+    border: none;
+    text-decoration: none;
+    resize: none;
+    width: 0;
+    height: 0;
+}
+
+#successful-msg-form-2
+{
+    display: none;
+    margin: 10px 0 20px 0 ;
+    color: var(--white-bars);
+}
 
 .check-2
 {
