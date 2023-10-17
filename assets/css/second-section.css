@@ -7,6 +7,11 @@
     flex-direction: column;
 }
 
+.second-section > h2
+{
+   margin: 25px;
+}
+
 .wrap-corrousel
 {
     width: 100%;
@@ -171,5 +176,10 @@
     .wrap-corrousel i
     {
         margin: 0;
+    }
+
+    .second-section > h2
+    {
+        margin: 75px;
     }
 }
