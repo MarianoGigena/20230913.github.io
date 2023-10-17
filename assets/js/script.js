@@ -1,6 +1,7 @@
 
 import { showReviewModal, rateValueFunction , reviewFormFunction} from "./reviewModal.js";
 import { showFormModal , formFunction } from "./formModal.js";
+import { carrouselfunction } from "./carrousel.js";
 
 // script.js
 
@@ -11,3 +12,5 @@ reviewFormFunction();
 showFormModal();
 formFunction();
 
+//codigo del carousel//
+carrouselfunction();
