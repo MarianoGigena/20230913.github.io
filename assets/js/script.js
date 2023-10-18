@@ -1,5 +1,5 @@
 
-import { showReviewModal, rateValueFunction , reviewFormFunction} from "./reviewModal.js";
+//import { showReviewModal, rateValueFunction , reviewFormFunction} from "./reviewModal.js";
 import { showFormModal , formFunction } from "./formModal.js";
 //import { carrouselfunction } from "./carrousel.js";
 //import { carrouselfunction2 } from "./carrousel2.js";
@@ -8,9 +8,9 @@ import { showFormModal , formFunction } from "./formModal.js";
 
 // script.js
 
-showReviewModal();
-rateValueFunction();
-reviewFormFunction();
+//showReviewModal();
+//rateValueFunction();
+//reviewFormFunction();
 
 showFormModal();
 formFunction();

@@ -14,7 +14,7 @@
 
 .wrap-corrousel
 {
-    width: 100%;
+    width: 85%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -106,6 +106,7 @@
     width: 90%;
     position: relative;
     filter: drop-shadow(10px 5px 15px black);
+    user-select: none;
 }
 
 .carousel.no-transition{

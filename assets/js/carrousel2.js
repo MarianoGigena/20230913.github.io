@@ -44,7 +44,7 @@ let isDragging = false, startX, startScrollLeft, timeoutID;
     
     const autoPlay = () => {
         if(window.innerWidth < 800) return;
-        timeoutID = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+        timeoutID = setTimeout(() => carousel.scrollLeft += cardPerView, 2500);
     }
     
     autoPlay();
@@ -70,8 +70,8 @@ let isDragging = false, startX, startScrollLeft, timeoutID;
 
     carousel.addEventListener("mousedown", dragStart);
     carousel.addEventListener("mousemove", dragging);
-    //document.addEventListener("mouseup", dragStop);
-    carousel.addEventListener("mouseup", dragStop);
+    document.addEventListener("mouseup", dragStop);
+   // carousel.addEventListener("mouseup", dragStop);
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutID));
     wrapper.addEventListener("mouseleave", autoPlay);    

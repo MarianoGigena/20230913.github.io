@@ -43,7 +43,7 @@ const carouselChildrens = [...carousel.children];
     
     const autoPlay = () => {
         if(window.innerWidth < 800) return;
-        timeoutID = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+        timeoutID = setTimeout(() => carousel.scrollLeft += cardPerView, 2500);
     }
     
     autoPlay();
@@ -51,7 +51,7 @@ const carouselChildrens = [...carousel.children];
     const infiniteScroll = () => {
         if(carousel.scrollLeft === 0){
             carousel.classList.add("no-transition");
-            carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth );       
+            //carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth );       
             carousel.scrollLeft = carousel.scrollWidth - (carousel.offsetWidth) ;    
             carousel.classList.remove("no-transition");
         } 

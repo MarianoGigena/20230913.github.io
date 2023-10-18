@@ -4,11 +4,14 @@
 @import url(second-section.css);
 @import url(triangle-section.css);
 @import url(third-section.css);
+@import url(fourth-section.css);
 @import url(footer.css);
 @import url(modal.css);
 @import url(modal-review.css);
 @import url(car-page-style.css);
 @import url(electric-car.css);
+@import url(review-style.css);
+
 
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

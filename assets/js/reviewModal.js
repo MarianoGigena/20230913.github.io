@@ -31,8 +31,7 @@ const successfulMSG2 = document.getElementById('successful-msg-form-2');
 
 
 
-const showReviewModal = ()=> 
-{
+
     botonMostrarModal2.addEventListener('click', () => {
         modal2.showModal();
     });
@@ -44,10 +43,9 @@ const showReviewModal = ()=>
     botonCerrarModal22.addEventListener('click', () => {
         modal2.close();
     });
-}
 
-const rateValueFunction = ()=> 
-{
+
+
     rate1.addEventListener('click', () => 
     {
         rateValue = "Mala";
@@ -82,10 +80,9 @@ const rateValueFunction = ()=>
         textRate.innerText = `${rateValue}`;
         textRateValue.value= rateValue;
     });
-}
 
-const reviewFormFunction = ()=>
-{
+
+
     modal2.addEventListener("submit", async (e) =>
     {
         e.preventDefault();
@@ -160,6 +157,4 @@ const reviewFormFunction = ()=>
     
         setTimeout(endForm,2000);
     });
-}
 
-export {showReviewModal, rateValueFunction, reviewFormFunction};
