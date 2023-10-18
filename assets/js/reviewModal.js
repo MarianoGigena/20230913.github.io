@@ -31,7 +31,8 @@ const successfulMSG2 = document.getElementById('successful-msg-form-2');
 
 
 
-
+const showReviewModal = ()=> 
+{
     botonMostrarModal2.addEventListener('click', () => {
         modal2.showModal();
     });
@@ -81,8 +82,9 @@ const successfulMSG2 = document.getElementById('successful-msg-form-2');
         textRateValue.value= rateValue;
     });
 
-
-
+}
+const reviewFunction = ()=>
+{
     modal2.addEventListener("submit", async (e) =>
     {
         e.preventDefault();
@@ -157,4 +159,6 @@ const successfulMSG2 = document.getElementById('successful-msg-form-2');
     
         setTimeout(endForm,2000);
     });
+}
 
+export { showReviewModal, reviewFunction};

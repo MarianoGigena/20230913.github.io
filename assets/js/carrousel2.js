@@ -6,7 +6,8 @@ const arrowBtns = document.querySelectorAll(".wrap-corrousel-car i");
 const firstCardWidth = document.querySelector(".card-car");
 const carouselChildrens = [...carousel.children];
 
-
+const carrouseFunction2 = ()=>
+{
 let isDragging = false, startX, startScrollLeft, timeoutID;
 
     let cardPerView = Math.round(carousel.offsetWidth);
@@ -75,3 +76,5 @@ let isDragging = false, startX, startScrollLeft, timeoutID;
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutID));
     wrapper.addEventListener("mouseleave", autoPlay);    
+}
+export {carrouseFunction2};
