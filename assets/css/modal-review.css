@@ -134,10 +134,11 @@
     flex-direction: column;
 }
 
-.rate-container > .star-widget > input
+.rate-container .star-widget input
 {
     display: none;
 }
+
 .star-widget label
 {
     color: var(--black-background-color3);
@@ -160,9 +161,9 @@ input:checked ~ label
     /*text-shadow: 0 0 20px var(--white-bars);*/
 }
 
-input#rate-5:checked
+input#rate-5:checked ~ label
 {    
-    text-shadow: 0 0 20px var(--white-bars);
+    text-shadow: 0 0 5px var(--red-parts-color);
 }
 
 /*input#rate-1:checked ~.rate-header:before

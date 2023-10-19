@@ -8,6 +8,7 @@
     flex-direction: column;
     position: absolute;
     z-index: 33;
+
 }
 
 .review-container > h1
@@ -31,14 +32,15 @@
 
     border-radius: 2px;
     border: 2px solid var(--black-background-color3);
-
 }
+
 .review-style
 {
     width: 100%;
     outline: 1px solid var(--black-background-color3);
     padding: 15px;
 }
+
 .review-item
 {
     padding: 25px;
