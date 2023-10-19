@@ -25,7 +25,7 @@
 
     <main>
         <section class="first-section_car-page">
-            <div class="wrap-corrousel-car">
+            <div class="wrap-corousel-car">
                 <i id="left" class="fa-solid fa-angle-left"></i>
 
                 <div class="wrapper-car">
@@ -80,8 +80,6 @@
             <div class="divisor">
                 <div class="container-triangles_car-section">
                     <div class="triangles-div_flex">
-                        <div class="triangles-div up"></div>
-                        <div class="triangles-div down"></div>
                         <div class="triangles-div up"></div>
                         <div class="triangles-div down"></div>
                         <div class="triangles-div up"></div>
@@ -284,14 +282,12 @@
             <div class="review-container">
                 <h1>Calificaciones y opiniones</h1>
                 <div id="review-box" class="review-flex"></div>
-                <button id="mostrarModal-2" class="contact-button-2">Danos tu opinión</button>
+                <button id="review-mostrarModal" class="review-button">Danos tu opinión</button>
             </div>
     
             <div class="divisor-2">
                         <div class="container-triangles">
                             <div class="triangles-div_flex">
-                                <div class="triangles-div up"></div>
-                                <div class="triangles-div down"></div>
                                 <div class="triangles-div up"></div>
                                 <div class="triangles-div down"></div>
                                 <div class="triangles-div up"></div>
@@ -438,27 +434,27 @@
                 <span id="cerrarModal" class="cerrar">&times;</span>
                 <h2>Contáctenos</h2>
                 <form id="formulario">
-                    <!--  Aquí van los campos de tu formulario -->
+
                     <div class="campo">
                         <label class="label" for="nombre">Nombre:</label>
                         <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
                     </div>
-                    <!--   Otros campos del formulario -->
-                    <!--  Aquí van los campos de tu formulario -->
+
                     <div class="campo">
                         <label class="label" for="email">Email:</label>
                         <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto." required>
                     </div>
-                    <!--  Aquí van los campos de tu formulario -->
+
                     <div class="campo">
                         <label class="label" for="comment">Consulta:</label>
                         <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí." required></textarea>
                     </div>
-                    <!--   Otros campos del formulario -->
+
                     <div class="form-buttons">
                         <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
                         <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
                     </div>
+
                     <div id="successful-msg-form">Tu consulta fue enviada con éxito.</div>
                     <div id="check"></div>
                 </form>
@@ -466,21 +462,20 @@
         </div>
     </dialog>
 
-    <dialog class="form-2" id="dialog-2">
+    <dialog class="review-form" id="review-dialog">
 
-        <div id="miModal-2" class="modal-2">
+        <div id="review-miModal" class="review-modal">
 
-            <div class="modal-contenido-2">
+            <div class="review-modal-contenido">
 
-                <span id="cerrarModal-2" class="cerrar-2">&times;</span>
+                <span id="review-cerrarModal" class="review-cerrar">&times;</span>
 
                 <h2>Opina</h2>
 
-                <form id="formulario-2">
-                    <!--  Aquí van los campos de tu formulario -->
+                <form id="review-formulario">
 
-                    <div class="campo-2">
-                        <label for="rating" class="label-2"></label>
+                    <div class="review-campo">
+
                         <div class="rate-container" id="rate-container">
 
                             <div class="star-widget">
@@ -505,8 +500,8 @@
                             <input type="text" value="" class="rate-value" id="rate-value" name="rate" required>
                     </div>
 
-                    <div class="campo-2">
-                        <label for="model" class="label-2">Modelo</label>
+                    <div class="review-campo">
+                        <label for="model" class="review-label">Modelo</label>
                         <select class="model-selector" name="model" id="model-selector">
                             <option value="Model S">Model S</option>
                             <option value="Model 3">Model 3</option>
@@ -515,26 +510,22 @@
                         </select>
                     </div>
 
-                    <div class="campo-2">
-                        <label class="label-2" for="nombre">Nombre:</label>
-                        <input class="input-2" type="text" id="nombre-2" name="name-2" placeholder="Introduzca su nombre." required>
+                    <div class="review-campo">
+                        <label class="review-label" for="nombre">Nombre:</label>
+                        <input class="review-input" type="text" id="review-nombre" name="name-2" placeholder="Introduzca su nombre." required>
                     </div>
-                    <!--   Otros campos del formulario -->
-                    <!--  Aquí van los campos de tu formulario -->
-                    
-                    <!--  Aquí van los campos de tu formulario -->
 
-                    <div class="campo">
-                        <label class="label-2" for="comment">Opinión</label>
-                        <textarea id="comentarios-2" name="comment-2" rows="4" cols="30" placeholder="Describa su experiencia aquí." required></textarea>
+                    <div class="review-campo">
+                        <label class="review-label" for="comment">Opinión</label>
+                        <textarea id="review-comentarios" name="comment-2" rows="4" cols="30" placeholder="Describa su experiencia aquí." required></textarea>
                     </div>
-                    <!--   Otros campos del formulario -->
-                    <div class="form-buttons-2">
-                        <button class="sumbit-button-2" id="sumbit-button-2" type="submit">Enviar</button>
-                        <button id="cerrarModal2-2" type="reset" class="close-button-2">Cerrar</button>
+
+                    <div class="review-form-buttons">
+                        <button class="review-sumbit-button" id="review-sumbit-button" type="submit">Enviar</button>
+                        <button id="review-cerrarModal2" type="reset" class="review-close-button">Cerrar</button>
                     </div>
-                    <div id="successful-msg-form-2">Tu opinión fue enviada con éxito.</div>
-                    <div id="check-2"></div>
+                    <div id="review-successful-msg-form">Tu opinión fue enviada con éxito.</div>
+                    <div id="review-check"></div>
                 </form>
             </div>
         </div>
@@ -571,5 +562,4 @@
     </footer>
     <script src="../assets/js/carModel-index.js" type="module"></script>
 </body>
-
 </html>

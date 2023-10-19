@@ -50,8 +50,6 @@ const formFunction = ()=>
 
         check.classList.add("check");
 
-        /*alert("Su consulta fue enviada con éxito.");*/
-
         const hidebuttons = () =>
         {
             botonCerrarModal.style.display = 'none';

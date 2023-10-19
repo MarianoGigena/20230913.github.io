@@ -98,7 +98,7 @@ footer {
 {
     width: 35px;
 }
-    /*Al pasar el cursor por encima de los links se bajará la opacidad*/
+
 .footer_item-two > a:hover , .footer_item-three > a:hover, .social-media-logo:hover
 {
     opacity: .5;
@@ -106,8 +106,6 @@ footer {
 
 @media (max-width: 800px) 
 {
-    /*Los contenidos del footer pasar de estar fila a columna*/
-
     .footer-container
     {
         flex-direction: column;

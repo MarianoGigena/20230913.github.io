@@ -1,15 +1,15 @@
 import { REVIEW_API_URL } from "./reviewApiConfig.js";
 
-const botonMostrarModal2 = document.getElementById('mostrarModal-2');
-const modal2 = document.getElementById('dialog-2');
-const botonCerrarModal2 = document.getElementById('cerrarModal-2');
-const botonCerrarModal22 = document.getElementById('cerrarModal2-2');
-const botonEnviar2 = document.getElementById('sumbit-button-2');
-const check2 = document.getElementById('check-2');
+const botonMostrarModal2 = document.getElementById('review-mostrarModal');
+const reviewModal = document.getElementById('review-dialog');
+const botonCerrarModal2 = document.getElementById('review-cerrarModal');
+const botonCerrarModal22 = document.getElementById('review-cerrarModal2');
+const botonEnviar2 = document.getElementById('review-sumbit-button');
+const revieCheck = document.getElementById('review-check');
 
-const labels2 = document.getElementsByClassName('label-2');
-const nameInput2 = document.getElementById('nombre-2');
-const textArea2 = document.getElementById('comentarios-2');
+const labels2 = document.getElementsByClassName('review-label');
+const nameInput2 = document.getElementById('review-nombre');
+const textArea2 = document.getElementById('review-comentarios');
 const rateContainer = document.getElementById('rate-container');
 
 const modelSelector = document.getElementById('model-selector');
@@ -23,28 +23,23 @@ const rate5 = document.getElementById('rate-5');
 const textRate = document.getElementById('rate-header');
 const textRateValue = document.getElementById('rate-value');
 
-
-
 let rateValue = "";
 
-const successfulMSG2 = document.getElementById('successful-msg-form-2');
-
-
+const successfulMSG2 = document.getElementById('review-successful-msg-form');
 
 const showReviewModal = ()=> 
 {
     botonMostrarModal2.addEventListener('click', () => {
-        modal2.showModal();
+        reviewModal.showModal();
     });
     
     botonCerrarModal2.addEventListener('click', () => {
-        modal2.close();
+        reviewModal.close();
     });
     
     botonCerrarModal22.addEventListener('click', () => {
-        modal2.close();
+        reviewModal.close();
     });
-
 
 
     rate1.addEventListener('click', () => 
@@ -85,11 +80,11 @@ const showReviewModal = ()=>
 }
 const reviewFunction = ()=>
 {
-    modal2.addEventListener("submit", async (e) =>
+    reviewModal.addEventListener("submit", async (e) =>
     {
         e.preventDefault();
     
-        const form2 = document.getElementById("formulario-2");
+        const form2 = document.getElementById("review-formulario");
     
         let dataForm = new FormData(form2);
     
@@ -101,10 +96,8 @@ const reviewFunction = ()=>
             body: dataForm,
         });
     
-        check2.classList.add("check-2");
-    
-        /*alert("Su opinión fue enviada con éxito.");*/
-    
+        revieCheck.classList.add("review-check");
+
         const hidebuttons = () =>
         {
             botonCerrarModal2.style.display = 'none';
@@ -117,6 +110,7 @@ const reviewFunction = ()=>
             textRateValue.style.display = 'none';
             rateContainer.style.display = 'none';
             modelSelector.style.display = 'none';
+
             for (let label2 of labels2) 
             {
                 label2.style.display = 'none';
@@ -129,8 +123,8 @@ const reviewFunction = ()=>
     
         const endForm = ()=> { 
             
-            modal2.close();
-            check2.classList.remove("check-2");
+            reviewModal.close();
+            revieCheck.classList.remove("review-check");
             form2.reset();
             botonCerrarModal2.style.display = 'inline';
             botonCerrarModal22.style.display = 'inline';

@@ -12,7 +12,7 @@
    margin: 25px;
 }
 
-.wrap-corrousel
+.wrap-corousel
 {
     width: 85%;
     height: 100%;
@@ -27,7 +27,7 @@
     position: relative;
 }
 
-.wrap-corrousel i{
+.wrap-corousel i{
     height: 40px;
     width: 40px;
     display: flex;
@@ -39,8 +39,6 @@
     position: absolute;
     top: 50%;
     font-size: 1.25rem;
-    /*color: var(--black-background-color);*/
-    /*background-color: #fff;*/
     color: var(--white-bars);
     background: var(--black-background-color);
     transform: translateY(-50%);
@@ -49,19 +47,19 @@
 
 }
 
-.wrap-corrousel i:hover
+.wrap-corousel i:hover
 {
     color: var(--red-parts-color);
     transition: .2s;
 }
 
-.wrap-corrousel i:first-child 
+.wrap-corousel i:first-child 
 {
     left: 0;
     z-index: 100;
 }
 
-.wrap-corrousel i:last-child 
+.wrap-corousel i:last-child 
 { 
     right: 0;
     z-index: 100;
@@ -99,6 +97,7 @@
     padding: 5%;
     z-index: 60;
     height: 100%;
+    
 }
 
 .card .img img
@@ -141,11 +140,6 @@
     cursor: pointer;
 }
 
-.card:hover ~ .carousel 
-{
-    background: linear-gradient(to top,rgba(255,255,255,0.9),rgba(25,25,25, 0.9));
-}
-
 .card span
 {
     color: var(--white-bars);
@@ -174,7 +168,7 @@
     {
         width: 90%;
     }
-    .wrap-corrousel i
+    .wrap-corousel i
     {
         margin: 0;
     }

@@ -10,6 +10,7 @@ const sheetShowButton = ()=>
     const showReviewButton = document.getElementById('aside-review-button');
     const fourthSection = document.getElementById('fourth-section');
     let isShow = false;
+
     showReviewButton.addEventListener('click', ()=>
     {
         isShow = !isShow;
@@ -24,8 +25,6 @@ const sheetShowButton = ()=>
         }
     });
 }
-
-
 const sheetShowFuntion = ()=>
 {
     fetch(FULL_URL)
@@ -34,20 +33,8 @@ const sheetShowFuntion = ()=>
         {
             let data = JSON.parse(rep.substr(47).slice(0,-2));
     
-            /*let model_title = document.getElementById('model');
-            let rate_title = document.getElementById('rate');
-            let name_title = document.getElementById('name');
-            let commnet_title = document.getElementById('commnet');
-            let reviewFlex = document.getElementById('review-flex');*/
-    
             let reviewBox = document.getElementById('review-box')
             let length = data.table.rows.length;
-    
-            /*model_title.innerHTML = data.table.rows[0].c[1].v;
-            rate_title.innerHTML = data.table.rows[0].c[0].v;
-            name_title.innerHTML = data.table.rows[0].c[2].v;
-            commnet_title.innerHTML = data.table.rows[0].c[3].v;
-            */
     
             for(let i = 0; i < length; i++)
             {
@@ -73,41 +60,7 @@ const sheetShowFuntion = ()=>
                 reviewBox.append(newReviewBox);
     
                 newReviewBox.innerHTML = reviewFull;
-                //newReviewBox.innerHTML = data.table.rows[i].c[0].v;
-                //newReviewBox.innerHTML = data.table.rows[i].c[1].v;
-                //newReviewBox.innerHTML = data.table.rows[i].c[2].v;
-                //newReviewBox.innerHTML = data.table.rows[i].c[3].v;
-    
-                /*let newBoxRate = document.createElement('div');
-                newBoxRate.id = ("box"+ i);
-                newBoxRate.className = "some-style";
-                rate_title.append(newBoxRate);
-    
-                newBoxRate.innerHTML = data.table.rows[i].c[0].v;
-                //------------------------------------------------///
-                let newBoxModel = document.createElement('div');
-                newBoxModel.id = ("box"+ i);
-                newBoxModel.className = "some-style";
-                model_title.append(newBoxModel);
-    
-                newBoxModel.innerHTML = data.table.rows[i].c[1].v;
-                //------------------------------------------------///
-                let newBoxName = document.createElement('div');
-                newBoxName.id = ("box"+ i);
-                newBoxName.className = "some-style";
-                name_title.append(newBoxName);
-    
-                newBoxName.innerHTML = data.table.rows[i].c[2].v;
-                //------------------------------------------------///
-                
-                let newBoxComment = document.createElement('div');
-                newBoxComment.id = ("box"+ i);
-                newBoxComment.className = "some-style";
-                commnet_title.append(newBoxComment);
-    
-                newBoxComment.innerHTML = data.table.rows[i].c[3].v;*/
             }
-    
         })
 }
 
