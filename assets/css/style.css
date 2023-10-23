@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
 
-    cursor: url("../media/logos/cursor5.png"), auto;
+    cursor: url("../media/logos/cursor5-webp.webp"), auto;
 
     scroll-behavior: smooth;
     --black-background-color:#151515;
