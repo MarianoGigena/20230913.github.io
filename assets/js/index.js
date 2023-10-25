@@ -4,3 +4,5 @@ import { carouselFunction } from "./carModelsCarousel.js";
 showFormModal();
 formFunction();
 carouselFunction();
+
+ScrollReveal().reveal('.scrollreveal', { delay: 100 });

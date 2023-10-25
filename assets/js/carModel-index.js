@@ -13,3 +13,5 @@ galleryCarouselFunction();
 
 sheetShowFuntion();
 sheetShowButton();
+
+ScrollReveal().reveal('.scrollreveal', { delay: 100 });
