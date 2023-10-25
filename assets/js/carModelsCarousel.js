@@ -1,9 +1,6 @@
-//codigo del carousel//
-
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrap-corousel i");
-//const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
 
 const carouselFunction = ()=>
@@ -53,7 +50,6 @@ const carouselFunction = ()=>
     const infiniteScroll = () => {
         if(carousel.scrollLeft === 0){
             carousel.classList.add("no-transition");
-            //carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth );       
             carousel.scrollLeft = carousel.scrollWidth - (carousel.offsetWidth) ;    
             carousel.classList.remove("no-transition");
         } 
@@ -72,7 +68,6 @@ const carouselFunction = ()=>
     carousel.addEventListener("mousedown", dragStart);
     carousel.addEventListener("mousemove", dragging);
     document.addEventListener("mouseup", dragStop);
-    //carousel.addEventListener("mouseup", dragStop);
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutID));
     wrapper.addEventListener("mouseleave", autoPlay);    

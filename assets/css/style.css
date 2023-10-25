@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Righteous&display=swap');
 
 @import url(main-background.css);
 @import url(second-section.css);
-@import url(triangle-section.css);
+@import url(triangle-animations.css);
 @import url(third-section.css);
 @import url(fourth-section.css);
 @import url(footer.css);
-@import url(modal.css);
-@import url(modal-review.css);
+@import url(modals-styles.css);
 @import url(car-page-style.css);
 @import url(electric-car.css);
 @import url(review-style.css);
@@ -21,6 +21,9 @@
 * {
     margin: 0;
     padding: 0;
+
+    --nav-height: 35px;
+    --nav-height2: 40px;
 
     cursor: url("../media/logos/cursor5-webp.webp"), auto;
 
@@ -37,4 +40,32 @@ body
 {
     display: flex;
     flex-direction: column;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--nav-height);
+    background: var(--black-background-color);
+    border-bottom: 1px solid var(--white-bars);
+}
+
+nav > a
+{
+    height: calc(1/3 * 100%);
+    z-index: 1000;
+}
+
+nav > a > img
+{
+    height: 100%;
+}
+
+nav > a > img:hover
+{
+    opacity: .5;
+    cursor: pointer;
 }

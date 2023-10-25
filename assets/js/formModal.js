@@ -1,4 +1,4 @@
-import { API_URL } from "./formApiConfig.js";
+const API_URL = "https://sheetdb.io/api/v1/fc9tst40wyrgy";
 
 const botonMostrarModal = document.getElementById('mostrarModal');
 const modal = document.getElementById('dialog');

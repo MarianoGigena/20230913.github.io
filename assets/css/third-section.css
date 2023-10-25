@@ -63,6 +63,11 @@
     width: 30%;
 }
 
+.third-section-div_info > p
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
 .third-section-div_info-button
 {
     display: flex;
@@ -77,9 +82,10 @@
     color: var(--red-parts-color);
     background: transparent;
     font-size: medium;
-    font-family: sans-serif;
     text-decoration: none;
     padding: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .third-section-div_info-button:hover
@@ -91,11 +97,7 @@
 
 @media (max-width: 800px) 
 {
-    .third-section-div_img > img
-    {
-        width: 100%;
-    }
-    .third-section-div_info-button
+    .third-section-div_img > img , .third-section-div_info-button
     {
         width: 100%;
     }

@@ -1,4 +1,4 @@
-import { REVIEW_API_URL } from "./reviewApiConfig.js";
+const REVIEW_API_URL = "https://sheetdb.io/api/v1/0f0xwosumm03g";
 
 const botonMostrarModal2 = document.getElementById('review-mostrarModal');
 const reviewModal = document.getElementById('review-dialog');

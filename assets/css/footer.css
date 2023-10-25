@@ -6,6 +6,12 @@ footer {
     border-top: .5px solid rgb(90, 90, 90);
 }
 
+footer p 
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -34,7 +40,6 @@ footer {
     margin: 5px 25px;
     color: white;
 }
-
 
 .footer_item-two
 {
@@ -67,7 +72,8 @@ footer {
     color: var(--red-parts-color);
     background: transparent;
     font-size: medium;
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .contact-button:hover

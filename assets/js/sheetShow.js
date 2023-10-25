@@ -1,6 +1,6 @@
 let SHEET_ID = "1-tBHeSc0UwDtkElexep6c-XHiABdzaXC1kF3XenPVOg";
 let SHEET_TITLE = "reSheet";
-let SHEET_RANGE = 'A2:D16'
+let SHEET_RANGE = 'A2:D20'
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 

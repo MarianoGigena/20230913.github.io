@@ -60,50 +60,25 @@
     padding: 5%;
 }
 
-.second-section-div_info_car-page > h2 
+.second-section-div_info_car-page > h2 , .third-section-div_info_car-page > h2 
 {
     color: var(--red-parts-color);
 }
 
-.second-section-div_info_car-page > p
+.second-section-div_info_car-page > p, .third-section-div_info_car-page > p
 {
     color: var(--white-bars);
+    font-family: 'Quicksand', sans-serif;
 }
 
-.second-section-div_info_car-page > h3
+.second-section-div_info_car-page > h3 , .third-section-div_info_car-page > h3
 {
     color: var(--white-bars);
     font-weight: bold;
     margin: 8px;
 }
 
-.third-section-div_info_car-page > h2 
-{
-    color: var(--red-parts-color);
-}
-
-.third-section-div_info_car-page > p
-{
-    color: var(--white-bars);
-}
-
-.third-section-div_info_car-page > h3
-{
-    color: var(--white-bars);
-    font-weight: bold;
-    margin: 8px;
-}
-
-.second-section-div_img_car-page
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 100%;
-}
-
-.third-section-div_img_car-page
+.second-section-div_img_car-page , .third-section-div_img_car-page
 {
     display: flex;
     align-items: center;
@@ -124,13 +99,23 @@
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
+.fourth-section
+{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .car-especific-info
 {
     margin: 50px 0;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
     color: var(--white-bars);
     gap: 25px;
     z-index: 55;
@@ -154,7 +139,7 @@
         height: 108vh;
     }
 
-    .second-section-div_info_car-page
+    .second-section-div_info_car-page , .third-section-div_info_car-page
     {
         flex-direction: column;
     }
@@ -165,35 +150,17 @@
         height: 108vh;
     }
 
-    .third-section-div_info_car-page
-    {
-        flex-direction: column;
-    }
-
-    .second-section-div_info_car-page > h2 
+    .second-section-div_info_car-page > h2 , .third-section-div_info_car-page > h2 
     {
         display: block;
         width: 100%;
         text-align: center;
     }
 
-    .third-section-div_info_car-page > h2 
-    {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .second-section-div_info_car-page
+    .second-section-div_info_car-page, .third-section-div_info_car-page
     {
         width: 100%;
     }
-
-    .third-section-div_info_car-page
-    {
-        width: 100%;
-    }
-
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -314,11 +281,6 @@
     flex-direction: column;
 }
 
-.card-car:hover
-{
-    cursor: pointer;
-}
-
 .divisor
 {
     display: flex;
@@ -404,7 +366,7 @@
     z-index: 200;
 }
 
-.aside-order-button:hover, .aside-review-button:hover
+.aside-order-button:hover, .aside-review-button:hover,.card-car:hover
 {
     cursor: pointer;
 }

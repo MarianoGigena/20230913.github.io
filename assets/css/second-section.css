@@ -10,6 +10,7 @@
 .second-section > h2
 {
    margin: 25px;
+   font-family: sans-serif;
 }
 
 .wrap-corousel
@@ -135,7 +136,7 @@
     flex-direction: column;
 }
 
-.card :hover
+.card:hover
 {
     cursor: pointer;
 }
