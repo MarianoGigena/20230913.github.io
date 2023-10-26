@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <section class="first-section_electric-car-page scrollreveal">
+        <section class="first-section_electric-car-page">
             <div class="car-especific-info">
                 <div class="car-info-item">
                     <h2>50,000+</h2>
@@ -189,15 +189,15 @@
             </div>
         </section>
 
-        <section class="second-section_car-page scrollreveal" id="second-section_car-page">
+        <section class="second-section_car-page" id="second-section_car-page">
 
-                <div class="second-section-div_img_car-page-1">
+                <div class="second-section-div_img_car-page-1 scrollreveal">
                     <img src="../assets/media/images/SuperCharger/Supercharger_Ubication-webp.webp" alt="">
                 </div>
-                <div class="second-section-div_info_car-page">
-                    <h2> U B I C A C I O N</h2>
-                    <h3> Ve a donde sea </h3>
-                    <p>
+                <div class="second-section-div_info_car-page scrollreveal">
+                    <h2 class="scrollreveal"> U B I C A C I O N</h2>
+                    <h3 class="scrollreveal2"> Ve a donde sea </h3>
+                    <p class="scrollreveal2">
                         Con más de 50,000 Superchargers, Tesla posee y 
                         opera la red global de carga rápida más grande del mundo.
                         Ubicados en las principales rutas cerca de servicios
@@ -205,45 +205,44 @@
                         cuando estás lejos de casa. Simplemente conecta, 
                         carga y listo.
                     </p>
-
                 </div>
         </section>
 
-        <section class="third-section_car-page scrollreveal" id="third-section_car-page">
+        <section class="third-section_car-page" id="third-section_car-page">
 
-                <div class="third-section-div_info_car-page">
-                    <h2>E X P E R I E N C I A</h2>
+                <div class="third-section-div_info_car-page scrollreveal">
+                    <h2 class="scrollreveal">E X P E R I E N C I A</h2>
 
-                    <h3>Libertad para viajar</h3>
-                    <p>Para usar un Supercharger, simplemente conéctalo y carga
+                    <h3 class="scrollreveal">Libertad para viajar</h3>
+                    <p class="scrollreveal2">Para usar un Supercharger, simplemente conéctalo y carga
                         automáticamente. Con la aplicación de Tesla puedes ver la 
                         disponibilidad de cajones de Supercharger, monitorear el 
                         estado de tu carga o recibir una notificación cuando estés listo
                         para rodar.</p>
 
-                    <h3>Mas barato que la gasolina</h3>
-                    <p>
+                    <h3 class="scrollreveal">Mas barato que la gasolina</h3>
+                    <p class="scrollreveal2">
                         El objetivo de la red de Superchargers es permitir la libertad de viajar para
                         los propietarios de Tesla a una fracción del costo de la gasolina. 
                         Reduce tu costo por kilómetro y nunca más vuelvas a pagar por gasolina.
                     </p>
 
-                    <div class="car-especific-info">
-                        <div class="car-info-item">
+                    <div class="car-especific-info scrollreveal2">
+                        <div class="car-info-item scrollreveal2">
                             <h2>25%</h2>
                             <p> Más rápido con pre acondicionamiento de la batería</p>
                         </div>
-                        <div class="car-info-item">
+                        <div class="car-info-item scrollreveal2">
                             <h2>15min</h2>
                             <p>Recarga hasta 322km</p>
                         </div>
-                        <div class="car-info-item">
+                        <div class="car-info-item scrollreveal2">
                             <h2>250kw</h2>
                             <p>Tasa de carga máxima</p>
                         </div>
                     </div>
                 </div>
-                <div class="third-section-div_img_car-page-2">
+                <div class="third-section-div_img_car-page-2 scrollreveal">
                     <img src="../assets/media/images/SuperCharger/Supercharger_Estation-webp.webp" alt="">
                 </div>
         </section>
@@ -252,26 +251,26 @@
     <dialog class="form" id="dialog">
         <div id="miModal" class="modal">
             <div class="modal-contenido">
-                <span id="cerrarModal" class="cerrar">&times;</span>
-                <h2>Contáctenos</h2>
+                <span id="cerrarModal" class="cerrar hiden">&times;</span>
+                <h2 class="hiden">Contáctenos</h2>
                 <form id="formulario">
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="nombre">Nombre:</label>
                         <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="email">Email:</label>
                         <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="comment">Consulta:</label>
                         <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí." required></textarea>
                     </div>
 
-                    <div class="form-buttons">
+                    <div class="form-buttons hiden">
                         <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
                         <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
                     </div>
@@ -292,7 +291,7 @@
             </div>
 
             <div class="footer_item-two">
-                <h3>Modelo de vehículos</h2>
+                <h3>Modelo de vehículos</h3>
                     <a href="../pages/model-S.html">Model S</a>
                     <a href="../pages/model-3.html">Model 3</a>
                     <a href="../pages/model-X.html">Model X</a>
@@ -301,7 +300,7 @@
             </div>
 
             <div class="footer_item-three">
-                <h3>Nuestra tecnología</h2>
+                <h3>Nuestra tecnología</h3>
                     <a href="../pages/vehiculos-electricos.html">Vehículos eléctricos</a>
                     <a href="../pages/supercharger.html">SuperCharging</a>
             </div>

@@ -5,4 +5,5 @@ showFormModal();
 formFunction();
 carouselFunction();
 
-ScrollReveal().reveal('.scrollreveal', { delay: 100 });
+ScrollReveal().reveal('.scrollreveal', { delay: 75 });
+ScrollReveal().reveal('.scrollreveal2', { delay: 175 });

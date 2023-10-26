@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <section class="first-section scrollreveal">
+        <section class="first-section">
             <div class="first-section_buttons-container">
                 <a href="#second-section" class="first-section_buttons-item">MODELOS DE VEHÍCULOS</a>
                 <a href="#third-section" class="first-section_buttons-item">INFORMACIÓN</a>
@@ -37,10 +37,10 @@
             <video class="first-section_video" src="assets/media/videos/Tesla video comprimido 2.mp4" autoplay loop muted></video>
         </section>
 
-        <section class="second-section scrollreveal" id="second-section">
-                <h2>M o d e l o s</h2>
-                <div class="wrap-corousel">
+        <section class="second-section" id="second-section">
+                <h2 class="scrollreveal">M o d e l o s</h2>
 
+                <div class="wrap-corousel scrollreveal2">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <div class="wrapper">
                             <ul class="carousel">
@@ -210,13 +210,13 @@
                 </div>
         </section>
 
-        <section class="third-section scrollreveal" id="third-section">
+        <section class="third-section" id="third-section">
 
             <div class="third-section-div1">
-                <div class="third-section-div_img">
+                <div class="third-section-div_img scrollreveal">
                     <img src="assets/media/images/vehicle car1-webp.webp" alt="">
                 </div>
-                <div class="third-section-div_info">
+                <div class="third-section-div_info scrollreveal">
                     <h2> Vehículos eléctricos </h2>
                     <p>Fabricación de vehículos increíbles y sin emisiones que puedan cargarse con energía limpia.</p>
                     <a href="./pages/vehiculos-electricos.html" class="third-section-div_info-button">Más información</a>
@@ -224,13 +224,13 @@
             </div>
 
             <div class="third-section-div2">
-                <div class="third-section-div_info">
+                <div class="third-section-div_info scrollreveal">
                     <h2> Superchargers </h2>
                     <p> Con más de 50000 superchargers <br> Tesla posee y opera la red global de carga rápida más grande del
                         mundo</p>
                     <a href="./pages/supercharger.html" class="third-section-div_info-button">Más información</a>
                 </div>
-                <div class="third-section-div_img">
+                <div class="third-section-div_img scrollreveal2">
                     <img src="assets/media/images/supercharging1-webp.webp" alt="">
                 </div>
             </div>
@@ -240,26 +240,26 @@
     <dialog class="form" id="dialog">
         <div id="miModal" class="modal">
             <div class="modal-contenido">
-                <span id="cerrarModal" class="cerrar">&times;</span>
-                <h2>Contáctenos</h2>
+                <span id="cerrarModal" class="cerrar hiden">&times;</span>
+                <h2 class="hiden">Contáctenos</h2>
                 <form id="formulario">
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="nombre">Nombre:</label>
                         <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="email">Email:</label>
                         <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="comment">Consulta:</label>
                         <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí." required></textarea>
                     </div>
 
-                    <div class="form-buttons">
+                    <div class="form-buttons hiden">
                         <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
                         <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
                     </div>
@@ -280,16 +280,15 @@
             </div>
 
             <div class="footer_item-two">
-                <h3>Modelo de vehículos</h2>
+                <h3>Modelo de vehículos</h3>
                     <a href="./pages/model-S.html">Model S</a>
                     <a href="./pages/model-3.html">Model 3</a>
                     <a href="./pages/model-X.html">Model X</a>
                     <a href="./pages/model-Y.html">Model Y</a>
-
             </div>
 
             <div class="footer_item-three">
-                <h3>Nuestra tecnología</h2>
+                <h3>Nuestra tecnología</h3>
                     <a href="./pages/vehiculos-electricos.html">Vehículos eléctricos</a>
                     <a href="./pages/supercharger.html">SuperCharging</a>
             </div>

@@ -4,16 +4,11 @@ const botonMostrarModal = document.getElementById('mostrarModal');
 const modal = document.getElementById('dialog');
 const botonCerrarModal = document.getElementById('cerrarModal');
 const botonCerrarModal2 = document.getElementById('cerrarModal2');
-const botonEnviar = document.getElementById('sumbit-button');
 const check = document.getElementById('check');
-
 const successfulMSG = document.getElementById('successful-msg-form');
-
-const nameInput = document.getElementById('nombre');
-
+const hidenElements = document.getElementsByClassName('hiden');
 const labels = document.getElementsByClassName('label');
-const emailInput = document.getElementById('email');
-const textArea = document.getElementById('comentarios');
+
 
 const showFormModal = ()=> 
 {
@@ -52,12 +47,11 @@ const formFunction = ()=>
 
         const hidebuttons = () =>
         {
-            botonCerrarModal.style.display = 'none';
-            botonCerrarModal2.style.display = 'none';
-            botonEnviar.style.display = 'none';
-            nameInput.style.display = 'none';
-            emailInput.style.display = 'none';
-            textArea.style.display = 'none';
+
+            for (let hideElement of hidenElements) 
+            {
+                hideElement.style.display = 'none';
+            }
 
             for (let label of labels) 
             {
@@ -74,13 +68,11 @@ const formFunction = ()=>
             modal.close();
             check.classList.remove("check");
             form.reset();
-            botonCerrarModal.style.display = 'inline';
-            botonCerrarModal2.style.display = 'inline';
-            botonEnviar.style.display = 'inline';
-            
-            nameInput.style.display = 'inline';
-            emailInput.style.display = 'inline';
-            textArea.style.display = 'inline';
+
+            for (let hideElement of hidenElements) 
+            {
+                hideElement.style.display = 'inline';
+            }
 
             for (let label of labels) 
             {

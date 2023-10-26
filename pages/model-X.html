@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <section class="first-section_car-page scrollreveal">
+        <section class="first-section_car-page">
             <div class="wrap-corousel-car">
                 <i id="left" class="fa-solid fa-angle-left"></i>
 
@@ -222,62 +222,62 @@
             </div>
         </section>
 
-        <section class="second-section_car-page scrollreveal" id="second-section_car-page">
+        <section class="second-section_car-page" id="second-section_car-page">
 
                 <div class="second-section-div_img_car-page-1">
                     <img src="../assets/media/images/Model X/Model_X_Interior-webp.webp" alt="">
                 </div>
-                <div class="second-section-div_info_car-page">
-                    <h2> INTERIOR </h2>
-                    <h3>Volante Yoke</h3>
-                    <p>
+                <div class="second-section-div_info_car-page scrollreveal">
+                    <h2 class="scrollreveal"> INTERIOR </h2>
+                    <h3 class="scrollreveal">Volante Yoke</h3>
+                    <p class="scrollreveal">
                         Un nuevo y audaz enfoque de la dirección ofrece una mejor
                         sensación y una vista sin obstrucciones del camino. </p>
                         
-                    <h3>Cabina espaciosa</h3>
-                    <p>El Model X ofrece una cabina espaciosa con el parabrisas panorámico 
+                    <h3 class="scrollreveal2">Cabina espaciosa</h3>
+                    <p class="scrollreveal2">El Model X ofrece una cabina espaciosa con el parabrisas panorámico 
                         más grande del mundo y asientos para hasta siete personas.</p>
                     
-                    <h3>Matente conectado</h3>
-                    <p>Conéctate al instante con Bluetooth para múltiples dispositivos 
+                    <h3 class="scrollreveal2">Matente conectado</h3>
+                    <p class="scrollreveal2">Conéctate al instante con Bluetooth para múltiples dispositivos 
                         o utiliza las funciones de carga rápida.</p>
                 </div>
         </section>
 
-        <section class="third-section_car-page scrollreveal" id="third-section_car-page">
+        <section class="third-section_car-page" id="third-section_car-page">
 
                 <div class="third-section-div_info_car-page">
-                    <h2> EXTERIOR </h2>
+                    <h2 class="scrollreveal"> EXTERIOR </h2>
 
-                    <h3>Diseño que primero toma en cuenta la seguridad</h3>
-                    <p>La seguridad es la parte más importante de cada Tesla. 
+                    <h3 class="scrollreveal">Diseño que primero toma en cuenta la seguridad</h3>
+                    <p class="scrollreveal">La seguridad es la parte más importante de cada Tesla. 
                         Diseñamos nuestros vehículos para superar los estándares de seguridad.</p>
 
-                    <h3>Sistema de propulsión eléctrico</h3>
-                    <p>Las plataformas del Model X unen las tecnologías de sistema de propulsión
+                    <h3 class="scrollreveal2">Sistema de propulsión eléctrico</h3>
+                    <p class="scrollreveal2">Las plataformas del Model X unen las tecnologías de sistema de propulsión
                         y batería para una combinación sin igual de desempeño, autonomía y eficiencia.</p>
 
-                    <h3>Aún más capaz</h3>
-                    <p>Con un amplio almacenamiento y una capacidad de remolque de 2,267 kg, 
+                    <h3 class="scrollreveal2">Aún más capaz</h3>
+                    <p class="scrollreveal2">Con un amplio almacenamiento y una capacidad de remolque de 2,267 kg, 
                         el Model X está construido para una máxima utilidad.</p>
 
-                        <div class="car-especific-info">
-                            <div class="car-info-item">
+                        <div class="car-especific-info scrollreveal">
+                            <div class="car-info-item scrollreveal2">
                                 <p>536km Autonomía</p>
                             </div>
-                            <div class="car-info-item">
+                            <div class="car-info-item scrollreveal2">
                                 <p>2.6s 0 a 100 km/h</p>
                             </div>
-                            <div class="car-info-item">
+                            <div class="car-info-item scrollreveal2">
                                 <p>9.9s Cuarto de milla</p>
                             </div>
-                            <div class="car-info-item">
+                            <div class="car-info-item scrollreveal2">
                                 <p>1,020hp Potencia máxima</p>
                             </div>
                         </div>
                 </div>
 
-                <div class="third-section-div_img_car-page-2">
+                <div class="third-section-div_img_car-page-2 scrollreveal">
                     <img src="../assets/media/images/Model X/Model_X_Exterior-webp.webp" alt="">
                 </div>
         </section>
@@ -435,26 +435,26 @@
     <dialog class="form" id="dialog">
         <div id="miModal" class="modal">
             <div class="modal-contenido">
-                <span id="cerrarModal" class="cerrar">&times;</span>
-                <h2>Contáctenos</h2>
+                <span id="cerrarModal" class="cerrar hiden">&times;</span>
+                <h2 class="hiden">Contáctenos</h2>
                 <form id="formulario">
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="nombre">Nombre:</label>
                         <input class="input" type="text" id="nombre" name="name" placeholder="Introduzca su nombre." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="email">Email:</label>
                         <input class="input" type="email" id="email" name="email" placeholder="Introduzca su email de contácto." required>
                     </div>
 
-                    <div class="campo">
+                    <div class="campo hiden">
                         <label class="label" for="comment">Consulta:</label>
                         <textarea id="comentarios" name="comment" rows="4" cols="30" placeholder="Escriba su consulta aquí." required></textarea>
                     </div>
 
-                    <div class="form-buttons">
+                    <div class="form-buttons hiden">
                         <button class="sumbit-button" id="sumbit-button" type="submit">Enviar</button>
                         <button id="cerrarModal2" type="reset" class="close-button">Cerrar</button>
                     </div>
@@ -467,20 +467,16 @@
     </dialog>
 
     <dialog class="review-form" id="review-dialog">
-
         <div id="review-miModal" class="review-modal">
-
             <div class="review-modal-contenido">
 
-                <span id="review-cerrarModal" class="review-cerrar">&times;</span>
-
-                <h2>Opina</h2>
-
+                <span id="review-cerrarModal" class="review-cerrar review-hiden">&times;</span>
+                <h2 class="review-hiden">Opina</h2>
+                
                 <form id="review-formulario">
-
                     <div class="review-campo">
 
-                        <div class="rate-container" id="rate-container">
+                        <div class="rate-container review-hiden" id="rate-container">
 
                             <div class="star-widget">
 
@@ -493,10 +489,10 @@
                                 <input type="radio" id="rate-3" name="rate" required>
                                 <label for="rate-3" class="fas fa-star"></label>
 
-                                <input type="radio" id="rate-2" name="rate" required>
+                                <input type="radio" id="rate-2"name="rate" required>
                                 <label for="rate-2" class="fas fa-star"></label>
 
-                                <input type="radio" id="rate-1" name="rate" required>
+                                <input type="radio" id="rate-1" name="rate"required>
                                 <label for="rate-1" class="fas fa-star"></label>
                             </div>
 
@@ -504,7 +500,7 @@
                             <input type="text" value="" class="rate-value" id="rate-value" name="rate" required>
                     </div>
 
-                    <div class="review-campo">
+                    <div class="review-campo review-hiden">
                         <label for="model" class="review-label">Modelo</label>
                         <select class="model-selector" name="model" id="model-selector">
                             <option value="Model S">Model S</option>
@@ -514,17 +510,17 @@
                         </select>
                     </div>
 
-                    <div class="review-campo">
+                    <div class="review-campo review-hiden">
                         <label class="review-label" for="nombre">Nombre:</label>
                         <input class="review-input" type="text" id="review-nombre" name="name-2" placeholder="Introduzca su nombre." required>
                     </div>
 
-                    <div class="review-campo">
+                    <div class="review-campo review-hiden">
                         <label class="review-label" for="comment">Opinión</label>
                         <textarea id="review-comentarios" name="comment-2" rows="4" cols="30" placeholder="Describa su experiencia aquí." required></textarea>
                     </div>
 
-                    <div class="review-form-buttons">
+                    <div class="review-form-buttons review-hiden">
                         <button class="review-sumbit-button" id="review-sumbit-button" type="submit">Enviar</button>
                         <button id="review-cerrarModal2" type="reset" class="review-close-button">Cerrar</button>
                     </div>
@@ -535,6 +531,7 @@
         </div>
     </dialog>
 
+
     <footer id="footer">
         <div class="footer-container">
             <div class="footer_item-one">
@@ -544,7 +541,7 @@
             </div>
 
             <div class="footer_item-two">
-                <h3>Modelo de vehículos</h2>
+                <h3>Modelo de vehículos</h3>
                     <a href="../pages/model-S.html">Model S</a>
                     <a href="../pages/model-3.html">Model 3</a>
                     <a href="../pages/model-X.html">Model X</a>
@@ -553,7 +550,7 @@
             </div>
 
             <div class="footer_item-three">
-                <h3>Nuestra tecnología</h2>
+                <h3>Nuestra tecnología</h3>
                     <a href="../pages/vehiculos-electricos.html">Vehículos eléctricos</a>
                     <a href="../pages/supercharger.html">SuperCharging</a>
             </div>

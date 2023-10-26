@@ -1,5 +1,7 @@
+
 .first-section_car-page
 {
+
     height: calc(100vh - var(--nav-height));
     width: 100%;
     display: flex;
@@ -85,6 +87,11 @@
     justify-content: center;
     overflow: hidden;
     height: 100%;
+}
+
+.second-section-div_img_car-page-1 , .third-section-div_img_car-page-2
+{
+    box-shadow: 0px 4px 50px #080808;
 }
 
 .second-section-div_img_car-page-1 > img
@@ -315,6 +322,7 @@
     flex-direction: column;
     justify-content: space-around;
     z-index: 200;
+    padding-bottom: 5%;
 }
 
 .aside-item-container
@@ -332,6 +340,7 @@
     color: var(--white-bars);
     font-size: small;
 }
+
 .aside-order-button
 {
     width: 80%;
@@ -346,6 +355,8 @@
     border-radius: 3px;
     font-size: larger;
     z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .aside-review-button 
@@ -364,6 +375,8 @@
     border-radius: 3px;
     font-size: larger;
     z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .aside-order-button:hover, .aside-review-button:hover,.card-car:hover

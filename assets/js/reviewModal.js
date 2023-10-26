@@ -4,14 +4,10 @@ const botonMostrarModal2 = document.getElementById('review-mostrarModal');
 const reviewModal = document.getElementById('review-dialog');
 const botonCerrarModal2 = document.getElementById('review-cerrarModal');
 const botonCerrarModal22 = document.getElementById('review-cerrarModal2');
-const botonEnviar2 = document.getElementById('review-sumbit-button');
 const revieCheck = document.getElementById('review-check');
-
 const labels2 = document.getElementsByClassName('review-label');
-const nameInput2 = document.getElementById('review-nombre');
-const textArea2 = document.getElementById('review-comentarios');
+const hidenElements = document.getElementsByClassName('review-hiden');
 const rateContainer = document.getElementById('rate-container');
-
 const modelSelector = document.getElementById('model-selector');
 
 const rate1 = document.getElementById('rate-1');
@@ -100,20 +96,14 @@ const reviewFunction = ()=>
 
         const hidebuttons = () =>
         {
-            botonCerrarModal2.style.display = 'none';
-            botonCerrarModal22.style.display = 'none';
-            botonEnviar2.style.display = 'none';
-
-            nameInput2.style.display = 'none';
-            textArea2.style.display = 'none';
-            textRate.style.display = 'none';
-            textRateValue.style.display = 'none';
-            rateContainer.style.display = 'none';
-            modelSelector.style.display = 'none';
-
             for (let label2 of labels2) 
             {
                 label2.style.display = 'none';
+            }
+
+            for (let hideElement of hidenElements) 
+            {
+                hideElement.style.display = 'none';
             }
 
             successfulMSG2.style.display = 'block';
@@ -126,16 +116,11 @@ const reviewFunction = ()=>
             reviewModal.close();
             revieCheck.classList.remove("review-check");
             form2.reset();
-            botonCerrarModal2.style.display = 'inline';
-            botonCerrarModal22.style.display = 'inline';
-            botonEnviar2.style.display = 'inline';
 
-            nameInput2.style.display = 'inline';
-            textArea2.style.display = 'inline';
-
-            textRate.style.display = 'inline';
-            textRateValue.style.display = 'inline';
-
+            for (let hideElement of hidenElements) 
+            {
+                hideElement.style.display = 'inline';
+            }
             rateContainer.style.display = 'flex';
             successfulMSG2.style.display = 'none';
             modelSelector.style.display = 'block';
