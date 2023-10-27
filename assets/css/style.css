@@ -26,12 +26,13 @@
     cursor: url("../media/logos/cursor5-webp.webp"), auto;
 
     scroll-behavior: smooth;
-    --black-background-color:#151515;
-
+    
+    --white-bars: #ddd;
     --black-background-color2:#111;
+    --black-background-color:#151515;
     --black-background-color3:#222;
     --red-parts-color: #FF0040;
-    --white-bars: #ddd;
+
 }
 
 body
